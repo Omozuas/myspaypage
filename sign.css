@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.inside{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+.open{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),transparent ,#009068),url(img/pexels-koolshooters-6628700.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+      width: 50px;
+}
+.text-box{
+    color: white;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.text-box h1{
+    font-size: 130px;
+    font-weight: 400;
+    line-height: 120px ;
+    margin-left: -10px;
+    color:transparent;
+    -webkit-text-stroke: 2px white;
+    background: url(img/broken.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+.text-box.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+.text-box a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    
+}
+.text-box  a:hover{
+    color: black;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.inside{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 40px;
+}
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+}
+h2{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.input-group{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-group input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 0 5px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: -5px;
+}
+
+.remember{
+    margin: -5px 0 15px 5px;
+}
+.remember label{
+    color: white;
+    font-size: 14px;
+}
+.remember label input{
+    accent-color: transparent;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background-color: #009068;
+    box-shadow: 0 0 10px #009068;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+.Registration-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+.Registration-link p{
+    color: white;
+}
+.Registration-link p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.Registration-link:hover{
+    text-decoration: underline;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: transparent;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box:nth-child(2){
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+.gender-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.form-submit-btn{
+    margin-top:40px ;
+}
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top:  10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgba(209,209,209);
+    background: rgba(63,114,76,0.7);
+}
+.form-submit-btn input:hover{
+    background: rgba(56,204,93,0.7);
+    color: rgb(255,255,255);
+}
+
+@media(max-width:600px){
+    .container{
+        min-width: 280px;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow:auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

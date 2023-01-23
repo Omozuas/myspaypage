@@ -1,0 +1,255 @@
+/*contact */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.inside{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+.swap{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),transparent ,#009068),url(img/pexels-elina-fairytale-3865680.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+      width: 50px;
+}
+.text-box{
+    color: white;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+    
+}
+.text-box h1{
+    font-size: 130px;
+    font-weight: 400;
+    line-height: 120px ;
+    margin-left: -10px;
+    color:transparent;
+    -webkit-text-stroke: 2px white;
+    background: url(img/broken.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+.text-box.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 300px;
+}
+.text-box a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    
+}
+.text-box  a:hover{
+    color: black;
+}
+.text-box a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+#contact-selection{
+    background: linear-gradient(rgba(0,0,0,0.5),transparent );
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+#contact-selection .container h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: rgb(238,225,235);
+}
+
+#contact-selection .container p{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: white;
+    letter-spacing: 3px;
+}
+.contact-form img{
+    font-size: 22PX;
+    padding: 3%;
+    background-color: none;
+    margin: 2%;
+    border-radius: 80%;
+    cursor: pointer;
+    border: 2px solid rgba(190,190,190);
+    color: rgb(190,190,190);
+}
+.contact-form img:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    /*grid-gap: 5px;*/
+}
+.form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+    letter-spacing: 2px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136,133,133,0.5);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+}
+
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136,133,133,0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+textarea::placeholder{
+    color:#fff;
+}
+
+.submit{
+    width: 40%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    border: 2px solid rgb(190,190,190);
+    color: rgb(190,190,190);
+}
+.submit:hover{
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+/*media services*/
+@media (max-width: 768px) {
+    #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #contact-section .submit{
+        width: 60%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
